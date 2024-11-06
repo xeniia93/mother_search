@@ -1,133 +1,428 @@
-/* Общие стили */
+/* Общий сброс стилей */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    
 }
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fdfdfd;
-    color: #333;
+    margin: 0;
+    height: 100vh;
+    background-color: #fdfdfd; /* Цвет фона страницы */
+    /* overflow: hidden; Скрываем прокрутку */
+    position: relative; /* Для позиционирования фигур */
 }
 
 .shape {
     position: absolute;
-    border-radius: 50%;
-    opacity: 0.3;
+    border-radius: 50%; /* Скругленные углы для кругов */
+    opacity: 0.3; /* Прозрачность фигур */
 }
 
-/* Формы */
-.shape1 { /* Пример координат для каждой фигуры */ }
-/* Другие shapes со стилями */
+.shape1 {
+    width: 100px;
+    height: 100px;
+    background-color: #f0c0c0; /* Бледно-розовый */
+    top: 20%;
+    left: 10%;
+}
 
-/* Заголовки и описание */
-h1, .cloud-title {
+.shape2 {
+    width: 150px;
+    height: 150px;
+    background-color: #d1b1a1; /* Бледно-коричневый */
+    top: 50%;
+    left: 30%;
+}
+
+.shape3 {
+    width: 200px;
+    height: 200px;
+    background-color: #f2d5d5; /* Другой оттенок бледно-розового */
+    top: 70%;
+    left: 70%;
+}
+
+.shape4 {
+    width: 120px;
+    height: 120px;
+    background-color: #e0c4b0; /* Другой оттенок бледно-коричневого */
+    top: 30%;
+    left: 50%;
+}
+
+.shape5 {
+    width: 180px;
+    height: 180px;
+    background-color: #f7e3e3; /* Светлый розовый */
+    top: 10%;
+    left: 80%;
+}
+
+
+
+/* Заголовки */
+h1 {
+    width: 100%;
+    font-size: 36px;
     text-align: center;
-    font-size: 1.8em;
-    margin: 1em 0;
+    font-weight: bold;
+    margin: 2% 0%;
 }
 
-.description {
-    font-size: 1em;
+p {
+    font-size: 38px;
     line-height: 1.6;
-    max-width: 900px;
-    margin: 0 auto;
+    color: #333;
+    max-width: 1900px;
     text-align: justify;
+    font-weight: bold;
 }
 
-/* Навигация */
-.header {
+li {
+    list-style: none;
+}
+
+/* Общий сброс стилей */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Учитываем padding и margin в ширине элементов */
+}
+
+/* Заголовки */
+h1 {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    margin: 2% 0%;
+}
+
+/* Навигация по сайту/block_0 */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+/* Основной блок с навигацией и анимацией */
+.block_0 {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 5%;
-    align-items: center;
+    justify-content: space-between; /* Разделяет анимацию и меню */
+    align-items: center; /* Центрирует элементы по вертикали */
+    padding: 20px 5%; /* Добавляет отступы по бокам */
+    width: 100%;
 }
 
-.wrapper svg text {
+/* Стиль для SVG */
+.wrapper {
+    flex: 1; /* Занимает оставшееся пространство слева */
+    max-width: 300px; /* Установка максимальной ширины для SVG */
+}
+
+svg {
     font-family: "Russo One", sans-serif;
-    font-size: 5em;
-    stroke: #F5A28A;
+    width: 100%;
+    height: 100%;
+}
+
+svg text {
     animation: stroke 7s infinite alternate;
+    stroke-width: 2;
+    stroke: #F5A28A;
+    font-size: 177px; /* Увеличенное значение шрифта анимации */
 }
 
 /* Анимация */
 @keyframes stroke {
-    /* анимация stroke */
+    0% {
+        fill: rgba(250,215,202,0); stroke: rgba(245,162,138,1);
+        stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70% { fill: rgba(250,215,202,0); stroke: rgba(245,162,138,1); }
+    80% { fill: rgba(250,215,202,0); stroke: rgba(245,162,138,1); stroke-width: 3; }
+    100% {
+        fill: rgba(250,215,202,1); stroke: rgba(245,162,138,0);
+        stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
 }
 
-/* Кнопки навигации */
-nav ul {
-    display: flex;
-    gap: 1em;
+/* Стиль для навигации */
+nav ul{
+    display: flex; /* Отображаем меню в строку */
+    justify-content: flex-end; /* Выравниваем меню вправо */
+    gap: 22px; /* Промежуток между кнопками */
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем маргины */
 }
 
+/* Стиль кнопок навигации */
 .nav-button {
-    padding: 0.8em 1.5em;
-    border-radius: 0.5em;
-    color: #fff;
-    cursor: pointer;
+    padding: 15px 30px; /* Отступы внутри кнопок */
+    border-radius: 8px; /* Закругленные края */
+    font-size: 1.5em; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    color: #fff; /* Цвет текста */
+    cursor: pointer; /* Указатель курсора */
+    transition: background-color 0.3s; /* Плавный переход при наведении */
 }
 
-.button-1 { background-color: #83a3e3; }
-.button-2 { background-color: #bf9fba; }
-.button-3 { background-color: #a894b4; }
+.button-1 {
+    background-color: #83a3e3; /* Цвет фона для первой кнопки */
+}
+
+.button-2 {
+    background-color: #bf9fba; /* Цвет фона для второй кнопки */
+}
+
+.button-3 {
+    background-color: #a894b4; /* Цвет фона для третьей кнопки */
+}
+
+.nav-button:hover {
+    filter: brightness(90%); /* Эффект затемнения при наведении */
+}
 
 /* Основной контейнер */
-.content {
-    padding: 0 5%;
+.block_1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Изображения */
+/* Описание */
+.description {
+        font-size: 38px;
+        line-height: 1.6;
+        color: #333;
+        max-width: 1900px;
+        margin: -495px 43px 115px 1211px;
+        padding: 0 15px;
+        text-align: justify;
+        font-weight: bold;
+    }
+
+
+/* Дополнительные отступы между параграфами */
+.description br {
+    line-height: 2;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Контейнер для изображений */
 .images {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 10%;
 }
 
-.mother {
+/* Левое изображение */
+.mother_1 {
     width: 45%;
 }
 
-.spot {
+/* Правое изображение с clip-path */
+.spot_1 {
+    width: 41%;
+    height: 328px;
     background: #f4bd6c;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 75%, 5% 100%, 50% 75%, 0 75%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 5% 100%, 50% 75%, 0% 75%);
+    margin-bottom: 35%;
 }
 
-/* Карточки */
+/* Текст поверх фигуры */
+.spot_text {
+    color: #fff;
+    font-size: 110px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* card */
 .card-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    gap: 5%;
 }
 
 .card {
-    padding: 1.5em;
-    border-radius: 1em;
-    font-size: 1.2em;
-    color: #fff;
+    padding: 42px 138px;
+    border-radius: 15px;
+    font-size: 28px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
 }
 
-/* Облачка */
-.cloud-box {
-    background-color: #fce4ec;
-    border-radius: 50px;
-    padding: 1em;
-    margin: 1em auto;
-    max-width: 600px;
+.card-1 {
+    background-color: #fad7ca; /* Пастельный розовый */
 }
 
-/* Форма обратной связи */
-.contact-form {
-    max-width: 400px;
-    margin: 0 auto;
+.card-2 {
+    background-color: #f5a28a; /* Пастельный тёмно-розовый */
+}
+
+.card-3 {
+    background-color: #f4bd6c; /* Пастельный оранжевый */
+}
+
+
+/* Основной контейнер блока */
+.block_1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+/* Стили для блока "Ведущие" */
+.leaders {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.leader-card {
+    text-align: center;
+    max-width: 150px;
+}
+
+.leader-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.leader-card p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Стили для списка "Приходите, если..." */
+.reasons {
+    list-style-type: disc;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.reasons li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* Стили для формы обратной связи */
+.contact-form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 .contact-form button {
-    padding: 0.8em;
+    padding: 12px;
     background-color: #83a3e3;
     color: #fff;
-    border-radius: 0.5em;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+.contact-form button:hover {
+    background-color: #6b8fd1;
+}
+
+/* Стиль для изображения с текстом "Как найти себя?" */
+.images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mother_1 {
+    width: 45%;
+}
+
+.spot_1 {
+    background-color: #f4bd6c;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 5% 100%, 50% 75%, 0% 75%);
+}
+
+.spot_text {
+    color: #fff;
+    font-size: 108px;
+    font-weight: bold;
+}
+
+/* Общие стили для облачков */
+.cloud-box {
+    background-color: #fce4ec; /* Пастельный цвет фона */
+    border-radius: 50px; /* Закругленные углы для эффекта облачка */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    color: #333;
+    font-size: 1rem;
+}
+
+.cloud-box:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #fce4ec;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.cloud-box:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 50px;
+    height: 50px;
+    background-color: #fce4ec;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+
+
+/* Адаптивность для меньших экранов */
+@media (max-width: 768px) {
+    .images {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .mother_1,
+    .spot_1 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+} 
