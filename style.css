@@ -242,16 +242,18 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 5%;
+    gap: 3%;
+    padding: 0px 5.1%;
 }
 
 .card {
-    padding: 42px 138px;
+    padding: 36px 10px;
     border-radius: 15px;
     font-size: 28px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #fff;
+    width: 329px;
 }
 
 .card-1 {
