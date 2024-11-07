@@ -189,15 +189,15 @@ nav ul{
 
 /* Описание */
 .description {
-        font-size: 38px;
-        line-height: 1.6;
-        color: #333;
-        max-width: 1900px;
-        margin: -495px 43px 115px 1211px;
-        padding: 0 15px;
-        text-align: justify;
-        font-weight: bold;
-    }
+    font-size: 38px;
+    line-height: 1.35;
+    color: #333;
+    max-width: 1900px;
+    margin: -495px 35px 96px 854px;
+    padding: 0 15px;
+    text-align: justify;
+    font-weight: bold;
+  }
 
 
 /* Дополнительные отступы между параграфами */
