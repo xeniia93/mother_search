@@ -16,6 +16,7 @@ body {
     position: absolute;
     border-radius: 50%; /* Скругленные углы для кругов */
     opacity: 0.3; /* Прозрачность фигур */
+    z-index: 0;
 }
 
 .shape1 {
@@ -58,7 +59,206 @@ body {
     left: 80%;
 }
 
+.shape6 {
+    width: 100px;
+    height: 100px;
+    background-color: #f0c0c0; /* Бледно-розовый */
+    top: 120%;
+    left: 10%;
+}
 
+.shape7 {
+    width: 150px;
+    height: 150px;
+    background-color: #d1b1a1; /* Бледно-коричневый */
+    top: 150%;
+    left: 30%;
+}
+
+.shape8 {
+    width: 200px;
+    height: 200px;
+    background-color: #f2d5d5; /* Другой оттенок бледно-розового */
+    top: 170%;
+    left: 70%;
+}
+
+.shape9 {
+    width: 120px;
+    height: 120px;
+    background-color: #e0c4b0; /* Другой оттенок бледно-коричневого */
+    top: 130%;
+    left: 50%;
+}
+
+.shape10 {
+    width: 180px;
+    height: 180px;
+    background-color: #f7e3e3; /* Светлый розовый */
+    top: 150%;
+    left: 83%;
+}
+
+.shape11 {
+    width: 100px;
+    height: 100px;
+    background-color: #f0c0c0; /* Бледно-розовый */
+    top: 220%;
+    left: 10%;
+}
+
+.shape12 {
+    width: 150px;
+    height: 150px;
+    background-color: #d1b1a1; /* Бледно-коричневый */
+    top: 250%;
+    left: 30%;
+}
+
+.shape13 {
+    width: 200px;
+    height: 200px;
+    background-color: #f2d5d5; /* Другой оттенок бледно-розового */
+    top: 270%;
+    left: 70%;
+}
+
+.shape14 {
+    width: 120px;
+    height: 120px;
+    background-color: #e0c4b0; /* Другой оттенок бледно-коричневого */
+    top: 230%;
+    left: 50%;
+}
+
+.shape15 {
+    width: 180px;
+    height: 180px;
+    background-color: #f7e3e3; /* Светлый розовый */
+    top: 210%;
+    left: 80%;
+}
+
+.shape16 {
+    width: 100px;
+    height: 100px;
+    background-color: #f0c0c0; /* Бледно-розовый */
+    top: 220%;
+    left: 10%;
+}
+
+.shape17 {
+    width: 150px;
+    height: 150px;
+    background-color: #d1b1a1; /* Бледно-коричневый */
+    top: 350%;
+    left: 30%;
+}
+
+.shape18 {
+    width: 200px;
+    height: 200px;
+    background-color: #f2d5d5; /* Другой оттенок бледно-розового */
+    top: 370%;
+    left: 70%;
+}
+
+.shape19 {
+    width: 120px;
+    height: 120px;
+    background-color: #e0c4b0; /* Другой оттенок бледно-коричневого */
+    top: 330%;
+    left: 50%;
+}
+
+.shape20 {
+    width: 180px;
+    height: 180px;
+    background-color: #f7e3e3; /* Светлый розовый */
+    top: 350%;
+    left: 83%;
+}
+
+
+.shape21 {
+    width: 100px;
+    height: 100px;
+    background-color: #f0c0c0; /* Бледно-розовый */
+    top: 420%;
+    left: 10%;
+}
+
+.shape22 {
+    width: 150px;
+    height: 150px;
+    background-color: #d1b1a1; /* Бледно-коричневый */
+    top: 450%;
+    left: 30%;
+}
+
+.shape23 {
+    width: 200px;
+    height: 200px;
+    background-color: #f2d5d5; /* Другой оттенок бледно-розового */
+    top: 470%;
+    left: 70%;
+}
+
+.shape24 {
+    width: 120px;
+    height: 120px;
+    background-color: #e0c4b0; /* Другой оттенок бледно-коричневого */
+    top: 430%;
+    left: 50%;
+}
+
+.shape25 {
+    width: 180px;
+    height: 180px;
+    background-color: #f7e3e3; /* Светлый розовый */
+    top: 410%;
+    left: 80%;
+}
+
+.shape26 {
+    width: 100px;
+    height: 100px;
+    background-color: #f0c0c0; /* Бледно-розовый */
+    top: 520%;
+    left: 10%;
+}
+
+.shape27 {
+    width: 150px;
+    height: 150px;
+    background-color: #d1b1a1; /* Бледно-коричневый */
+    top: 550%;
+    left: 30%;
+}
+
+.shape28 {
+    width: 200px;
+    height: 200px;
+    background-color: #f2d5d5; /* Другой оттенок бледно-розового */
+    top: 570%;
+    left: 70%;
+}
+
+.shape29 {
+    width: 120px;
+    height: 120px;
+    background-color: #e0c4b0; /* Другой оттенок бледно-коричневого */
+    top: 540%;
+    left: 50%;
+}
+
+.shape30 {
+    width: 180px;
+    height: 180px;
+    background-color: #f7e3e3; /* Светлый розовый */
+    top: 550%;
+    left: 83%;
+}
 
 /* Заголовки */
 h1 {
