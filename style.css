@@ -184,7 +184,7 @@ body {
     width: 100px;
     height: 100px;
     background-color: #f0c0c0; /* Бледно-розовый */
-    top: 420%;
+    top: 21%;
     left: 10%;
 }
 
@@ -192,7 +192,7 @@ body {
     width: 150px;
     height: 150px;
     background-color: #d1b1a1; /* Бледно-коричневый */
-    top: 450%;
+    top: 42%;
     left: 30%;
 }
 
@@ -200,7 +200,7 @@ body {
     width: 200px;
     height: 200px;
     background-color: #f2d5d5; /* Другой оттенок бледно-розового */
-    top: 470%;
+    top: 72%;
     left: 70%;
 }
 
@@ -208,7 +208,7 @@ body {
     width: 120px;
     height: 120px;
     background-color: #e0c4b0; /* Другой оттенок бледно-коричневого */
-    top: 430%;
+    top: 35%;
     left: 50%;
 }
 
@@ -216,7 +216,7 @@ body {
     width: 180px;
     height: 180px;
     background-color: #f7e3e3; /* Светлый розовый */
-    top: 410%;
+    top: 10%;
     left: 80%;
 }
 
@@ -224,7 +224,7 @@ body {
     width: 100px;
     height: 100px;
     background-color: #f0c0c0; /* Бледно-розовый */
-    top: 520%;
+    top: 2%;
     left: 10%;
 }
 
@@ -232,7 +232,7 @@ body {
     width: 150px;
     height: 150px;
     background-color: #d1b1a1; /* Бледно-коричневый */
-    top: 550%;
+    top: 5%;
     left: 30%;
 }
 
@@ -240,7 +240,7 @@ body {
     width: 200px;
     height: 200px;
     background-color: #f2d5d5; /* Другой оттенок бледно-розового */
-    top: 570%;
+    top: 55%;
     left: 70%;
 }
 
@@ -248,7 +248,7 @@ body {
     width: 120px;
     height: 120px;
     background-color: #e0c4b0; /* Другой оттенок бледно-коричневого */
-    top: 540%;
+    top: 42%;
     left: 50%;
 }
 
@@ -256,8 +256,8 @@ body {
     width: 180px;
     height: 180px;
     background-color: #f7e3e3; /* Светлый розовый */
-    top: 550%;
-    left: 83%;
+    top: 100%;
+    left: 77%;
 }
 
 /* Заголовки */
