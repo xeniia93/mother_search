@@ -216,7 +216,7 @@ nav ul{
     line-height: 1.35;
     color: #333;
     max-width: 1900px;
-    margin: -495px 35px 96px 854px;
+    margin: -495px 35px 96px 1200px;
     padding: 0 15px;
     text-align: justify;
     font-weight: bold;
@@ -248,7 +248,7 @@ nav ul{
 .spot_1 {
     width: 41%;
     height: 328px;
-    background: #f4bd6c;
+    background: #fb9404;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 5% 100%, 50% 75%, 0% 75%);
     margin-bottom: 35%;
 }
@@ -396,7 +396,7 @@ nav ul{
     font-weight: bold;
 }
 
-/* Общие стили для облачков */
+/* Общие стили для info */
 .section-title {
     text-align: center;
     color: #333;
@@ -404,21 +404,26 @@ nav ul{
     margin-top: 40px;
 }
 
+.info-box-container {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
+    justify-content: center; /* Центрируем карточки */
+    gap: 20px; /* Отступы между карточками */
+}
+
 .info-box {
     background: linear-gradient(135deg, #83a3e3, #bf9fba, #a894b4);
-    /* Градиентный фон с плавным переходом */
-    background-size: 400% 400%; /* Увеличенный размер для плавных переходов */
-    animation: gradient-animation 10s ease infinite; /* Анимация градиента */
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
     border-radius: 15px;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 400px;
+    width: 250px; /* Фиксированная ширина для карточек */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Устанавливаем вертикальное направление */
-    align-items: center; /* Выравнивание по центру */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    color: #fff; /* Белый текст для контраста с градиентом */
+    color: #fff;
 }
 
 /* Анимация плавного движения градиента */
@@ -429,10 +434,10 @@ nav ul{
 }
 
 .info-box-image {
-    width: 80px; /* Увеличиваем изображение для выделения */
+    width: 80px;
     height: 80px;
     border-radius: 10px;
-    margin-bottom: 15px; /* Отступ между изображением и содержимым */
+    margin-bottom: 15px;
 }
 
 .info-box-content {
@@ -448,9 +453,8 @@ nav ul{
 .info-box p {
     font-size: 1rem;
     margin: 0;
-    color: #f0f0f0; /* Слегка светлее для улучшения читаемости на градиенте */
+    color: #f0f0f0;
 }
-
 
 
 /* Адаптивность для меньших экранов */
