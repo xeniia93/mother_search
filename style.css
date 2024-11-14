@@ -23,14 +23,14 @@ body {
     height: 100px;
     background-color: #f0c0c0; /* Бледно-розовый */
     top: 20%;
-    left: 10%;
+    left: 15%;
 }
 
 .shape2 {
     width: 150px;
     height: 150px;
     background-color: #d1b1a1; /* Бледно-коричневый */
-    top: 50%;
+    top: 40%;
     left: 30%;
 }
 
@@ -39,7 +39,7 @@ body {
     height: 200px;
     background-color: #f2d5d5; /* Другой оттенок бледно-розового */
     top: 70%;
-    left: 70%;
+    left: 60%;
 }
 
 .shape4 {
@@ -63,7 +63,7 @@ body {
     height: 150px;
     background-color: #d1b1a1; /* Бледно-коричневый */
     top: 70%;
-    left: 10%;
+    left: 17%;
 }
 
 .shape7 {
@@ -79,7 +79,7 @@ body {
     height: 120px;
     background-color: #e0c4b0; /* Другой оттенок бледно-коричневого */
     top: 45%;
-    left: 80%;
+    left: 70%;
 }
 
 .shape9 {
@@ -397,45 +397,59 @@ nav ul{
 }
 
 /* Общие стили для облачков */
-.cloud-box {
-    background-color: #fce4ec; /* Пастельный цвет фона */
-    border-radius: 50px; /* Закругленные углы для эффекта облачка */
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
+.section-title {
     text-align: center;
     color: #333;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.info-box {
+    background: linear-gradient(135deg, #83a3e3, #bf9fba, #a894b4);
+    /* Градиентный фон с плавным переходом */
+    background-size: 400% 400%; /* Увеличенный размер для плавных переходов */
+    animation: gradient-animation 10s ease infinite; /* Анимация градиента */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Устанавливаем вертикальное направление */
+    align-items: center; /* Выравнивание по центру */
+    text-align: center;
+    color: #fff; /* Белый текст для контраста с градиентом */
+}
+
+/* Анимация плавного движения градиента */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.info-box-image {
+    width: 80px; /* Увеличиваем изображение для выделения */
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Отступ между изображением и содержимым */
+}
+
+.info-box-content {
+    color: #fff;
+}
+
+.info-box-title {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+.info-box p {
     font-size: 1rem;
+    margin: 0;
+    color: #f0f0f0; /* Слегка светлее для улучшения читаемости на градиенте */
 }
-
-.cloud-box:before {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: #fce4ec;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-.cloud-box:after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    right: 50%;
-    transform: translateX(50%);
-    width: 50px;
-    height: 50px;
-    background-color: #fce4ec;
-    border-radius: 50%;
-    z-index: -1;
-}
-
 
 
 
