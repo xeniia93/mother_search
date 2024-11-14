@@ -306,6 +306,7 @@ nav ul{
     gap: 20px;
     justify-content: center;
     margin: 30px 0;
+    z-index: 1;
 }
 
 .leader-card {
@@ -409,6 +410,7 @@ nav ul{
     flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
     justify-content: center; /* Центрируем карточки */
     gap: 20px; /* Отступы между карточками */
+    z-index: 1;
 }
 
 .info-box {
@@ -457,8 +459,19 @@ nav ul{
 }
 
 
-/* Адаптивность для меньших экранов */
+/* Мобильные устройства (маленькие экраны, например, iPhone SE) */
+@media (max-width: 320px) {
+    /* Стили для экранов до 320px */
+}
+
+/* Мобильные устройства (экраны до 480px, например, iPhone 6, 7, 8) */
+@media (max-width: 480px) {
+    /* Стили для экранов до 480px */
+}
+
+/* Мобильные устройства (большие экраны, например, iPhone X, iPhone 12) */
 @media (max-width: 768px) {
+    /* Стили для экранов до 768px */
     .images {
         flex-direction: column;
         align-items: center;
@@ -469,4 +482,25 @@ nav ul{
         width: 50%;
         margin-bottom: 20px;
     }
-} 
+}
+
+/* Планшеты (портретная ориентация) */
+@media (max-width: 1024px) {
+    /* Стили для экранов до 1024px */
+}
+
+/* Планшеты (альбомная ориентация) */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    /* Стили для экранов от 1024px до 1280px */
+}
+
+/* Десктопы и большие экраны (например, 1366px, 1920px) */
+@media (min-width: 1280px) {
+    /* Стили для экранов от 1280px и больше */
+}
+
+/* Высокая плотность пикселей (Retina-дисплеи) */
+@media only screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+    /* Стили для экранов с высокой плотностью пикселей */
+}
