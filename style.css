@@ -58,6 +58,38 @@ body {
     left: 80%;
 }
 
+.shape6 {
+    width: 150px;
+    height: 150px;
+    background-color: #d1b1a1; /* Бледно-коричневый */
+    top: 70%;
+    left: 10%;
+}
+
+.shape7 {
+    width: 200px;
+    height: 200px;
+    background-color: #f2d5d5; /* Другой оттенок бледно-розового */
+    top: 50%;
+    left: 90%;
+}
+
+.shape8 {
+    width: 120px;
+    height: 120px;
+    background-color: #e0c4b0; /* Другой оттенок бледно-коричневого */
+    top: 45%;
+    left: 80%;
+}
+
+.shape9 {
+    width: 180px;
+    height: 180px;
+    background-color: #f7e3e3; /* Светлый розовый */
+    top: 55%;
+    left: 60%;
+}
+
 /* Заголовки */
 h1 {
     width: 100%;
