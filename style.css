@@ -131,7 +131,7 @@ p {
 /* Стиль для SVG */
 .wrapper {
     flex: 1; /* Занимает оставшееся пространство слева */
-    max-width: 300px; /* Установка максимальной ширины для SVG */
+    max-width: 356px; /* Установка максимальной ширины для SVG */
 }
 
 svg {
@@ -143,7 +143,7 @@ svg text {
     animation: stroke 7s infinite alternate;
     stroke-width: 2;
     stroke: #F5A28A;
-    font-size: 120px; /* Увеличенное значение шрифта анимации */
+    font-size: 115px; /* Увеличенное значение шрифта анимации */
 }
 
 /* Анимация */
@@ -221,8 +221,6 @@ nav ul{
     font-size: 108px;
     font-weight: bold;
 }
-
-
 
 .block_1 {
     width: 100%;
