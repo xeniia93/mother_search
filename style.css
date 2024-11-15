@@ -242,7 +242,7 @@ nav ul{
     line-height: 1.35;
     color: #333;
     max-width: 1900px;
-    margin: -495px 35px 96px 1200px;
+    margin: -451px 165px 233px 907px;
     padding: 0 15px;
     text-align: justify;
     font-weight: bold;
@@ -280,13 +280,13 @@ nav ul{
 }
 
 .card {
-    padding: 36px 10px;
+    padding: 38px 43px;
     border-radius: 15px;
     font-size: 33px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #fff;
-    width: 625px;
+    width: 508px;
 }
 
 .card-1 {
