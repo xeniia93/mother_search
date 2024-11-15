@@ -211,15 +211,23 @@ nav ul{
     width: 45%;
 }
 
+
+
+/* Правое изображение с clip-path */
 .spot_1 {
-    background-color: #f4bd6c;
+    width: 44%;
+    height: 238px;
+    background: #fb9404;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 5% 100%, 50% 75%, 0% 75%);
+    margin-bottom: 35%;
 }
 
+/* Текст поверх фигуры */
 .spot_text {
     color: #fff;
-    font-size: 108px;
+    font-size: 74px;
     font-weight: bold;
+    text-align: center;
 }
 
 .block_1 {
@@ -260,23 +268,6 @@ nav ul{
 .mother_1 {
     width: 45%;
     z-index: 1;
-}
-
-/* Правое изображение с clip-path */
-.spot_1 {
-    width: 41%;
-    height: 328px;
-    background: #fb9404;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 5% 100%, 50% 75%, 0% 75%);
-    margin-bottom: 35%;
-}
-
-/* Текст поверх фигуры */
-.spot_text {
-    color: #fff;
-    font-size: 110px;
-    font-weight: bold;
-    text-align: center;
 }
 
 /* card */
