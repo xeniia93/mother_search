@@ -4,12 +4,21 @@
     margin: 0;
     box-sizing: border-box; /* Учитываем padding и margin в ширине элементов */   
 }
+@font-face {
+    font-family: "Kaph-Regular" ;
+    src: url(font/ofont.ru_Kaph.ttf);
+}
 
 body {
     margin: 0;
     height: 100vh;
-    background-color: #f9f9f9; /* Цвет фона страницы */
+    background-color: #f9f9f9;
+    font-family: "Kaph-Regular", sans-serif; /* Указываем шрифт здесь */
 }
+
+
+
+
 
 .shape {
     border-radius: 50%; /* Скругленные углы для кругов */
@@ -273,12 +282,11 @@ nav ul{
 .card {
     padding: 36px 10px;
     border-radius: 15px;
-    font-size: 28px;
+    font-size: 33px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #fff;
-    width: 329px;
-}
+    width: 625px;
 
 .card-1 {
     background-color: #fad7ca; /* Пастельный розовый */
