@@ -581,6 +581,11 @@ nav ul{
     }
 }
 
+footer {
+    background-color: #bf9fba;
+    margin-top: 2%;
+}
+
 /* Планшеты (портретная ориентация) */
 @media (max-width: 1024px) {
     /* Стили для экранов до 1024px */
