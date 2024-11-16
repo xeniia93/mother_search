@@ -585,6 +585,9 @@ nav ul{
 footer {
     background-color: #bf9fba;
     margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
 }
 
 /* Планшеты (портретная ориентация) */
