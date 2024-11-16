@@ -600,6 +600,12 @@ footer {
         font-size: 18px;
         padding: 10px;
     }
+    .welcome {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
     .contact-form {
         padding: 15px;
     }
@@ -639,6 +645,16 @@ footer {
     .card {
         width: 90%;
     }
+
+    /* .reasons {
+        width: 300px;
+    } */
+
+    .welcome {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
 }
 
 /* Планшеты в портретной ориентации (до 768px) */
@@ -657,6 +673,13 @@ footer {
     .card {
         width: 80%;
     }
+
+    .welcome {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+}
     .contact-form {
         padding: 20px;
     }
@@ -682,6 +705,13 @@ footer {
     .leader-card p {
         font-size: 14px;
     }
+
+    .welcome {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+}
 }
 
 
