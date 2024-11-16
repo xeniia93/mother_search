@@ -590,6 +590,101 @@ footer {
     z-index: 1;
 }
 
+/* Смартфоны с очень маленьким экраном (до 320px) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.5em;
+        margin: 10% 0%;
+    }
+    p {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .contact-form {
+        padding: 15px;
+    }
+    .contact-form input {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .contact-form button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Смартфоны (до 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+        margin: 8% 0%;
+    }
+    .images {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mother_1, .spot_1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .description {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+    .card-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .card {
+        width: 90%;
+    }
+}
+
+/* Планшеты в портретной ориентации (до 768px) */
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 250px;
+    }
+    .nav-button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+    .card-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card {
+        width: 80%;
+    }
+    .contact-form {
+        padding: 20px;
+    }
+    .contact-form input {
+        font-size: 20px;
+    }
+}
+
+/* Планшеты в альбомной ориентации (до 1024px) */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    .info-box {
+        width: 300px;
+    }
+    .card-container {
+        gap: 10px;
+    }
+    .card {
+        font-size: 28px;
+    }
+    .leader-card p {
+        font-size: 14px;
+    }
+}
+
+
 /* Планшеты (портретная ориентация) */
 @media (max-width: 1024px) {
     /* Стили для экранов до 1024px */
