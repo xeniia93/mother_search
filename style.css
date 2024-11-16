@@ -20,6 +20,25 @@ li {
     list-style: none;
 }
 
+/* Центровка заголовков */
+h1 {
+    text-align: center;
+    font-family: "Kaph-Regular", sans-serif;
+    color: #555;
+    margin: 5% 0%;
+    font-size: 2.5em;
+    z-index: 1;
+}
+
+p {
+    font-size: 38px;
+    line-height: 1.6;
+    max-width: 1900px;
+    text-align: justify;
+    font-weight: bold;
+    z-index: 1;
+}
+
 .shape {
     border-radius: 50%; /* Скругленные углы для кругов */
     opacity: 0.3; /* Прозрачность фигур */
@@ -314,7 +333,7 @@ nav ul{
     animation: gradient-animation 10s ease infinite;
     border-radius: 15px;
     padding: 20px;
-    width: 500px; /* Фиксированная ширина для карточек */
+    width: 363px; /* Фиксированная ширина для карточек */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -342,13 +361,13 @@ nav ul{
 }
 
 .info-box-title {
-    font-size: 2.7rem;
+    font-size: 2.0rem;
     margin: 0 0 10px;
     color: #fff;
 }
 
 .info-box p {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     margin: 0;
     padding: 5% 0%;
     color: #f0f0f0;
@@ -398,25 +417,24 @@ nav ul{
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Стили для списка */
 .reasons {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 15px 14px;
+    margin: 26px 17px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 35px;
     animation: fadeIn 1.5s ease-in-out; /* Анимация появления */
 }
 
 .reasons li {
     background-color: #f7e3e3; /* Светлый розовый */
     color: #333;
-    font-size: 16px;
+    font-size: 32px;
     padding: 10px 20px;
     border-radius: 20px;
     display: inline-block;
@@ -442,24 +460,6 @@ nav ul{
     }
 }
 
-/* Центровка заголовков */
-h1 {
-    text-align: center;
-    font-family: "Kaph-Regular", sans-serif;
-    color: #555;
-    margin: 5% 0%;
-    font-size: 2.5em;
-    z-index: 1;
-}
-
-p {
-    font-size: 38px;
-    line-height: 1.6;
-    max-width: 1900px;
-    text-align: justify;
-    font-weight: bold;
-    z-index: 1;
-}
 
 
 /* Форма */
@@ -471,8 +471,6 @@ p {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 40px auto;
     animation: fadeIn 1s ease-in-out; /* Анимация появления */
 }
 
@@ -490,18 +488,18 @@ p {
 
 /* Стили для полей формы */
 .contact-form label {
-    font-size: 18px;
+    font-size: 28px;
     margin-bottom: 8px;
     color: #333;
 }
 
 .contact-form input {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
+    padding: 23px;
+    margin-bottom: 40px;
     border: 2px solid #d1b1a1; /* Бледно-коричневый */
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 32px;
     outline: none;
     transition: border-color 0.3s ease-in-out; /* Плавное изменение рамки */
 }
