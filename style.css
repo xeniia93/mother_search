@@ -390,10 +390,10 @@ nav ul{
 }
 .teacher-photo {
     width: 100%;
-    height: auto;
+    height: 415px;
     border-radius: 50%;
     margin-bottom: 15px;
-    z-index: 1;
+    background-color:#f9f9f9;
 }
 
 .card:hover {
