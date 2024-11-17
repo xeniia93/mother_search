@@ -5,13 +5,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
 
     // Тут можно добавить код для отправки email или сохранения данных в базу данных
-
-    // Пример отправки письма
     $to = "i@kefremova.ru";
     $subject = "Обратная связь с сайта";
     $message = "Имя: $name\nТелефон: $phone\nEmail: $email";
-    mail($to, $subject, $message);
 
-    echo "Спасибо за ваше сообщение!";
+    if (mail($to, $subject, $message)) {
+        echo json_encode(["status" => "success", "message" => "Спасибо за ваше сообщение!"]);
+    } else {
+        echo json_encode(["status" => "error", "message" => "Не удалось отправить сообщение. Попробуйте позже."]);
+    }
 }
 ?>
