@@ -1,3 +1,9 @@
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('active');
+}
+
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Отключаем стандартное поведение формы
 
@@ -40,3 +46,4 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 };
+
