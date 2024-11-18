@@ -620,6 +620,7 @@ nav ul{
     margin: 0;
     padding: 0;
     font-size: 14px;
+    text-align: center;
   }
   
   .footer ul {
@@ -687,128 +688,7 @@ footer {
     z-index: 1;
 }
 
-/* Смартфоны с очень маленьким экраном (до 320px) */
-@media (max-width: 320px) {
-    h1 {
-        font-size: 1.5em;
-        margin: 10% 0%;
-    }
-    p {
-        font-size: 18px;
-        padding: 10px;
-    }
-    .welcome {
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-    }
 
-    .contact-form {
-        padding: 15px;
-    }
-    .contact-form input {
-        font-size: 18px;
-        padding: 10px;
-    }
-    .contact-form button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-}
-
-/* Смартфоны (до 480px) */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2em;
-        margin: 8% 0%;
-    }
-    .images {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .mother_1, .spot_1 {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .description {
-        font-size: 18px;
-        margin: 0 10px;
-    }
-    .card-container {
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-    }
-    .card {
-        width: 90%;
-    }
-
-    /* .reasons {
-        width: 300px;
-    } */
-
-    .welcome {
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-    }
-}
-
-/* Планшеты в портретной ориентации (до 768px) */
-@media (max-width: 768px) {
-    .wrapper {
-        max-width: 250px;
-    }
-    .nav-button {
-        font-size: 1.2em;
-        padding: 10px 20px;
-    }
-    .card-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .card {
-        width: 80%;
-    }
-
-    .welcome {
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-    }
-}
-    .contact-form {
-        padding: 20px;
-    }
-    .contact-form input {
-        font-size: 20px;
-    }
-
-
-/* Планшеты в альбомной ориентации (до 1024px) */
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 2.2em;
-    }
-    .info-box {
-        width: 300px;
-    }
-    .card-container {
-        gap: 10px;
-    }
-    .card {
-        font-size: 28px;
-    }
-    .leader-card p {
-        font-size: 14px;
-    }
-
-    .welcome {
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-    }
-}
 
 /* Стили для модального окна */
 .modal {
@@ -850,23 +730,170 @@ footer {
 }
 
 
-/* Планшеты (портретная ориентация) */
-@media (max-width: 1024px) {
-    /* Стили для экранов до 1024px */
+/* Адаптивность через media queries */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2em; /* Уменьшение размера заголовка */
+        margin: 4% 0;
+    }
+
+    p {
+        font-size: 28px;
+        line-height: 1.5;
+        padding: 0 5%;
+    }
+
+    .shape {
+        display: none; /* Убираем фигуры на меньших экранах для упрощения */
+    }
+
+    .block_0 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 10%;
+    }
+
+    nav ul {
+        gap: 15px; /* Уменьшаем расстояние между кнопками */
+    }
+
+    .nav-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .images {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        gap: 10px;
+    }
+
+    .mother_1, .spot_1 {
+        width: 90%; /* Уменьшаем ширину для корректного отображения */
+    }
+
+    .description {
+        font-size: 18px;
+        margin: 20px;
+        text-align: left; /* Улучшение читаемости */
+    }
+
+    .card-container {
+        flex-wrap: wrap; /* Разрешаем перенос карточек */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%; /* Карточки занимают всю ширину */
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .info-box-container {
+        flex-direction: column; /* Вертикальная структура для мобильных */
+        align-items: center;
+    }
+
+    .info-box {
+        width: 90%; /* Уменьшаем ширину карточек */
+    }
+
+    .reasons {
+        gap: 20px; /* Уменьшаем отступы между элементами */
+    }
+
+    .reasons li {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contact-form {
+        width: 90%; /* Сужаем форму */
+        padding: 20px;
+    }
+
+    .contact-form input {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+        padding: 15px;
+    }
+
+    .contact-form button {
+        font-size: 16px; /* Уменьшаем размер текста кнопки */
+        padding: 10px 20px;
+    }
 }
 
-/* Планшеты (альбомная ориентация) */
-@media (min-width: 1024px) and (max-width: 1280px) {
-    /* Стили для экранов от 1024px до 1280px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .block_0 {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .info-box {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .reasons li {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .contact-form input {
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
 }
 
-/* Десктопы и большие экраны (например, 1366px, 1920px) */
-@media (min-width: 1280px) {
-    /* Стили для экранов от 1280px и больше */
-}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+        margin: 3% 0;
+    }
 
-/* Высокая плотность пикселей (Retina-дисплеи) */
-@media only screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), 
-       only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
-    /* Стили для экранов с высокой плотностью пикселей */
+    p {
+        font-size: 16px;
+        padding: 0 5%;
+    }
+
+    .nav-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .card {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .reasons li {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .contact-form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 12px;
+    }
 }
