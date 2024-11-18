@@ -20,6 +20,11 @@ li {
     list-style: none;
 }
 
+a {
+ text-decoration: none;
+ color: #fff;
+}
+
 /* Центровка заголовков */
 h1 {
     text-align: center;
@@ -170,7 +175,7 @@ nav ul{
     gap: 22px; /* Промежуток между кнопками */
     list-style-type: none; /* Убираем маркеры списка */
     padding: 0; /* Убираем отступы */
-    margin: 0; /* Убираем маргины */
+    margin: 0; /* Убираем марджины */
 }
 
 /* Стиль кнопок навигации */
@@ -179,7 +184,6 @@ nav ul{
     border-radius: 8px; /* Закругленные края */
     font-size: 1.5em; /* Размер шрифта */
     font-weight: bold; /* Жирный шрифт */
-    color: #fff; /* Цвет текста */
     cursor: pointer; /* Указатель курсора */
     transition: background-color 0.3s; /* Плавный переход при наведении */
 }
@@ -833,7 +837,7 @@ footer {
 .close {
     color: #aaa;
     float: right;
-    font-size: 18px;
+    font-size: 44px;
     font-weight: bold;
     cursor: pointer;
 }
