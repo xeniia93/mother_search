@@ -706,30 +706,6 @@ nav ul{
   }
   
 
-/* Мобильные устройства (маленькие экраны, например, iPhone SE) */
-@media (max-width: 320px) {
-    /* Стили для экранов до 320px */
-}
-
-/* Мобильные устройства (экраны до 480px, например, iPhone 6, 7, 8) */
-@media (max-width: 480px) {
-    /* Стили для экранов до 480px */
-}
-
-/* Мобильные устройства (большие экраны, например, iPhone X, iPhone 12) */
-@media (max-width: 768px) {
-    /* Стили для экранов до 768px */
-    .images {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-    .mother_1,
-    .spot_1 {
-        width: 50%;
-        margin-bottom: 20px;
-    }
-}
 
 footer {
     background-color: #bf9fba;
@@ -781,6 +757,32 @@ footer {
 
 
 /* Адаптивность через media queries */
+
+/* Мобильные устройства (маленькие экраны, например, iPhone SE) */
+@media (max-width: 320px) {
+    /* Стили для экранов до 320px */
+}
+
+/* Мобильные устройства (экраны до 480px, например, iPhone 6, 7, 8) */
+@media (max-width: 480px) {
+    /* Стили для экранов до 480px */
+}
+
+/* Мобильные устройства (большие экраны, например, iPhone X, iPhone 12) */
+@media (max-width: 768px) {
+    /* Стили для экранов до 768px */
+    .images {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .mother_1,
+    .spot_1 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 1200px) {
     h1 {
         font-size: 2em; /* Уменьшение размера заголовка */
@@ -944,7 +946,7 @@ footer {
 @media (max-width: 480px) {
     h1 {
         font-size: 1.2em;
-        margin: 3% 0;
+        margin: 45% 0% 0% 0%;
     }
 
     p {
