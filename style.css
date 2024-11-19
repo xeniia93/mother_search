@@ -169,14 +169,14 @@ svg text {
 }
 
 /* Стиль для навигации */
-/* header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #f5a28a;
     color: white;
-} */
+}
 
 .nav-menu ul {
     display: flex;
@@ -921,7 +921,7 @@ footer {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #333;
+        background-color: #f5a28a;
         width: 100%;
         text-align: center;
     }
