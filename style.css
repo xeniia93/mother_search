@@ -961,7 +961,7 @@ footer {
         font-size: 1rem;
     }
 
-    info-box p {
+    .info-box p {
         font-size: 0.9rem;
         margin: 0;
         padding: 0%;
@@ -991,6 +991,19 @@ footer {
     .contact-form button {
         font-size: 16px; /* Уменьшаем размер текста кнопки */
         padding: 10px 20px;
+    }
+
+    .teachers {
+        width: 90%;
+    }
+    
+    .card p {
+        font-style: 15px;
+    }
+
+    .teacher-photo {
+        width: 85%;
+        height: 271px;
     }
 
     .welcome {
