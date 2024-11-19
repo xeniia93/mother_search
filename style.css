@@ -766,6 +766,39 @@ footer {
 /* Мобильные устройства (экраны до 480px, например, iPhone 6, 7, 8) */
 @media (max-width: 480px) {
     /* Стили для экранов до 480px */
+    h1 {
+        font-size: 1.2em;
+        margin: 45% 0% 0% 0%;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 0 5%;
+    }
+
+    .nav-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .card {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .reasons li {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .contact-form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 12px;
+    }
 }
 
 /* Мобильные устройства (большие экраны, например, iPhone X, iPhone 12) */
@@ -780,6 +813,71 @@ footer {
     .spot_1 {
         width: 50%;
         margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .block_0 {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .info-box {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .reasons li {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .contact-form input {
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #f5a28a;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
     }
 }
 
@@ -883,108 +981,5 @@ footer {
     .welcome {
         flex-direction: column;
         width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    .block_0 {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .card {
-        font-size: 18px;
-        padding: 15px;
-    }
-
-    .info-box {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .reasons li {
-        font-size: 18px;
-        padding: 8px;
-    }
-
-    .contact-form input {
-        font-size: 16px;
-    }
-
-    .contact-form button {
-        font-size: 14px;
-    }
-
-    .burger-menu {
-        display: flex;
-    }
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #f5a28a;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-menu ul {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-
-    .nav-menu ul li {
-        margin: 10px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.2em;
-        margin: 45% 0% 0% 0%;
-    }
-
-    p {
-        font-size: 16px;
-        padding: 0 5%;
-    }
-
-    .nav-button {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-
-    .card {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .reasons li {
-        font-size: 14px;
-        padding: 5px;
-    }
-
-    .contact-form input {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .contact-form button {
-        font-size: 12px;
     }
 }
