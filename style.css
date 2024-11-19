@@ -936,21 +936,35 @@ footer {
         flex-wrap: wrap; /* Разрешаем перенос карточек */
         justify-content: center;
         gap: 20px;
+        width: 75%;
+        padding: 1% 8% 1% 4%;
     }
 
     .card {
         width: 100%; /* Карточки занимают всю ширину */
-        font-size: 24px;
+        font-size: 16px;
         padding: 20px;
     }
 
     .info-box-container {
         flex-direction: column; /* Вертикальная структура для мобильных */
         align-items: center;
+        width: 75%;
+        padding: 1% 4% 1% 4%;
     }
 
     .info-box {
         width: 90%; /* Уменьшаем ширину карточек */
+    }
+
+    .info-box-title {
+        font-size: 1rem;
+    }
+
+    info-box p {
+        font-size: 0.9rem;
+        margin: 0;
+        padding: 0%;
     }
 
     .reasons {
