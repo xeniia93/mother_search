@@ -772,7 +772,7 @@ footer {
 @media (max-width: 768px) {
     /* Стили для экранов до 768px */
     .images {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         padding: 0;
     }
@@ -816,7 +816,7 @@ footer {
     }
 
     .images {
-        flex-direction: column; /* Меняем направление на вертикальное */
+        flex-direction: column-reverse; /* Меняем направление на вертикальное */
         gap: 10px;
     }
 
@@ -824,6 +824,9 @@ footer {
         width: 90%; /* Уменьшаем ширину для корректного отображения */
     }
 
+    .spot_text {
+        font-size: 55px;
+    }
     .description {
         font-size: 18px;
         margin: 20px;
@@ -853,11 +856,13 @@ footer {
 
     .reasons {
         gap: 20px; /* Уменьшаем отступы между элементами */
+        padding: 0;
+        margin: 0;
     }
 
     .reasons li {
-        font-size: 20px;
-        padding: 10px;
+        font-size: 15px;
+        padding: 9px 12px;
     }
 
     .contact-form {
@@ -873,6 +878,11 @@ footer {
     .contact-form button {
         font-size: 16px; /* Уменьшаем размер текста кнопки */
         padding: 10px 20px;
+    }
+
+    .welcome {
+        flex-direction: column;
+        width: 90%;
     }
 }
 
@@ -965,7 +975,7 @@ footer {
     }
 
     .reasons li {
-        font-size: 16px;
+        font-size: 14px;
         padding: 5px;
     }
 
