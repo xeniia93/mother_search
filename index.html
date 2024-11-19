@@ -12,6 +12,10 @@
     <div class="shape shape3"></div>
     <div class="shape shape4"></div>
     <div class="shape shape5"></div>
+    <div class="shape shape6"></div>
+    <div class="shape shape7"></div>
+    <div class="shape shape8"></div>
+    <div class="shape shape9"></div>
 
     <header class="block_0">
         <div class="wrapper">
@@ -19,23 +23,24 @@
                 <text x="50%" y="50%" dy=".35em" text-anchor="middle">Мама-поиск</text>
             </svg>
         </div>
-        <nav>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-menu">
             <ul>
-                <li class="nav-button button-1">Для кого</li>
-                <li class="nav-button button-2">О нас</li>
-                <li class="nav-button button-3">Контакт</li>
+                <li class="nav-button button-1"> <a href="#for">Для кого </a> </li>
+                <li class="nav-button button-2"> <a href="#about"> О нас</a></li>
+                <li class="nav-button button-3"> <a href="#contacts"> Контакт </a> </li>
             </ul>
         </nav>
     </header>
-
-    <div class="shape shape6"></div>
-    <div class="shape shape7"></div>
-    <div class="shape shape8"></div>
-    <div class="shape shape9"></div>
-    <div class="shape shape10"></div>
+    
+    </header>
 
     <main class="block_1">
-        <h1>Мама-поиск: Путь к новым возможностям и IT-профессиям для мам</h1>
+        <h1 id="for">Мама-поиск: Путь к новым возможностям и IT-профессиям для мам</h1>
         <div class="images">
             <img src="img/10417983.png" alt="Изображение матери" class="mother_1">
             <div class="spot_1">
@@ -47,69 +52,106 @@
             Наш проект помогает женщинам, чья профессиональная деятельность временно приостановилась из-за рождения детей, адаптироваться к современным требованиям рынка труда.
         </p>
 
-        <h1>Главные страхи молодых мам, находящихся в поиске работы</h1>
+        <h1> Главные страхи молодых мам, находящихся в поиске работы</h1>
         <div class="card-container">
             <div class="card card-1">Высокая конкуренция на рынке труда</div>
             <div class="card card-2">Недостаток опыта и знаний</div>
             <div class="card card-3">Неопределенность в выборе специализации</div>
         </div>
-        <div class="shape shape11"></div>
-        <div class="shape shape12"></div>
-        <div class="shape shape13"></div>
-        <div class="shape shape14"></div>
-        <div class="shape shape15"></div>
 
-        <h1 class="cloud">Что вы получите?</h1>
-        <div class="cloud-box">
-            <p>Понимание новых реалий рынка труда: мы расскажем о современных профессиях, изменениях в IT-сфере и навыках, которые ценятся в условиях цифровой экономики.</p>
-        </div>
-        <div class="cloud-box">
-            <p>Комьюнити поддержки и развития: здесь вы найдете единомышленников, с которыми можно будет делиться успехами, поддерживать друг друга на каждом этапе пути и обмениваться опытом.</p>
+        <h1 class="section-title" id="about">Что вы получите?</h1>
+
+        <div class="info-box-container">
+            <div class="info-box">
+                <img src="img/icons 10 -50.png" alt="Иконка понимания рынка" class="info-box-image">
+                <div class="info-box-content">
+                    <h2 class="info-box-title">Понимание новых реалий рынка труда</h2>
+                    <p>Мы расскажем о современных профессиях, изменениях в IT-сфере и навыках, которые ценятся в условиях цифровой экономики.</p>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <img src="img/icons8-50.png" alt="Иконка комьюнити поддержки" class="info-box-image">
+                <div class="info-box-content">
+                    <h2 class="info-box-title">Комьюнити поддержки и развития</h2>
+                    <p>Здесь вы найдете единомышленников, с которыми можно будет делиться успехами, поддерживать друг друга и обмениваться опытом.</p>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <img src="img/icons9 -50.png" alt="Иконка поиска новой профессии" class="info-box-image">
+                <div class="info-box-content">
+                    <h2 class="info-box-title">Поиск новой профессии</h2>
+                    <p>Мы поможем вам сделать уверенный шаг в новую профессию и адаптироваться к изменениям на рынке труда.</p>
+                </div>
+            </div>
         </div>
 
-        <h1 class="cloud">Почему это важно?</h1>
-        <div class="cloud-box">
-            <p>Рынок труда стремительно меняется, и сейчас самое подходящее время для того, чтобы сделать уверенный шаг в новую профессию.</p>
-        </div>
-        <div class="cloud-box">
-            <p>"Мама-поиск" поддержит каждую маму на этом пути и покажет, что добиться успеха в IT возможно, даже если вы делаете первые шаги.</p>
-        </div>
-        <div class="cloud-box">
-            <p>Мы поможем вам найти баланс между семьей и карьерой, открыть потенциал и достичь профессиональных высот! Присоединяйтесь к "Мама-поиск" и откройте для себя мир IT и новых возможностей!</p>
-        </div>
+        <h1 class="section-title">Почему это важно?</h1>
+        <div class="info-box-container">
 
-        <div class="shape shape16"></div>
-        <div class="shape shape17"></div>
-        <div class="shape shape18"></div>
-        <div class="shape shape19"></div>
-        <div class="shape shape20"></div>
+
+<div class="info-box">
+    <img src="img/icons12-50.png" alt="Иконка изменения рынка труда" class="info-box-image">
+    <div class="info-box-content">
+        <h2 class="info-box-title">Изменения на рынке труда</h2>
+        <p>Рынок труда стремительно меняется, и сейчас самое подходящее время для того, чтобы сделать уверенный шаг в новую профессию.</p>
+    </div>
+</div>
+
+<div class="info-box">
+    <img src="img/icons11 -50.png" alt="Иконка успеха для мам" class="info-box-image">
+    <div class="info-box-content">
+        <h2 class="info-box-title">Поддержка для мам</h2>
+        <p>"Мама-поиск" поддержит каждую маму и покажет, что добиться успеха в IT возможно, даже если вы делаете первые шаги.</p>
+    </div>
+</div>
+
+    <div class="info-box">
+    <img src="img/icons13 -50.png" alt="Иконка баланса" class="info-box-image">
+    <div class="info-box-content">
+        <h2 class="info-box-title">Баланс между семьей и карьерой</h2>
+        <p>Мы поможем найти баланс между семьей и карьерой, открыть потенциал и достичь профессиональных высот!</p>
+    </div>
+    </div>
+    </div>
 
         <h1>Преподаватели</h1>
-        <div class="leaders">
-            <div class="leader-card">
-                <img src="img/img_2.png" alt="Лидер 1">
-                <p>Ксения Ефремова.<br>Преподаватель</p>
-            </div>
-            <div class="leader-card">
-                <img src="img/foto_1.png" alt="Лидер 2">
-                <p>Евгения Орлова<br>HR</p>
+        <div class="teachers">
+            <div class="cards">
+                <!-- Карточка 1 -->
+                <div class="card card-1">
+                    <img src="img/img_2.png" alt="Ефремова Ксения" class="teacher-photo">
+                    <h3>Ефремова Ксения</h3>
+                    <p>Эксперт по веб-разработке с 5-летним опытом. Специализируется на обучении начинающих и frontend-разработке.</p>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="card card-2">
+                    <img src="img/foto_1.png" alt="Орлова Евгения" class="teacher-photo">
+                    <h3>Орлова Евгения</h3>
+                    <p>HR-директор. Опыт работы более 7 лет, включая менторство в крупных проектах.</p>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="card card-3">
+                    <img src="img/P2zVxvXn98M.png" alt="Антонина Латыпова" class="teacher-photo">
+                    <h3>Антонина Латыпова</h3>
+                    <p>Преподаватель информационно-технических дисциплин с болеее, чем 10летним стажем.</p>
+                </div>
             </div>
         </div>
+        
 
-        <h1>Приходите, если...</h1>
+    <h1 id="contacts">Приходите, если...</h1>
+        <div class="welcome">
         <ul class="reasons">
-            <li>Вы хотите освоить новую профессию</li>
-            <li>Вам нужен гибкий график для совмещения с семьей</li>
-            <li>Вы готовы к развитию и поддержке единомышленников</li>
+            <li>Вы хотите узнать новое о <br> рынке труда в 2024 году</li>
+            <li>Вы считаете, <br> что сфера IT то, что вам нужно</li>
+            <li>Вы готовы к развитию и <br> поддержке единомышленников</li>
         </ul>
-        <div class="shape shape21"></div>
-        <div class="shape shape22"></div>
-        <div class="shape shape23"></div>
-        <div class="shape shape24"></div>
-        <div class="shape shape25"></div>
 
-        <h1>Форма обратной связи</h1>
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
+            <h1>Давайте к нам! </h1>
+
             <label for="name">ФИО</label>
             <input type="text" id="name" name="name" required>
             
@@ -121,11 +163,46 @@
             
             <button type="submit">Отправить</button>
         </form>
-        <div class="shape shape26"></div>
-        <div class="shape shape27"></div>
-        <div class="shape shape28"></div>
-        <div class="shape shape29"></div>
-        <div class="shape shape30"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Спасибо за вашу заявку! Мы скоро с вами свяжемся.</p>
+        </div>
+    </div>
+    
+
+   
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>О нас</h3>
+            <p>Ваш надежный помощник в мире IT и профориентации. <br> Мы помогаем молодым мамам адаптироваться к требованиям современного рынка труда.</p>
+          </div>
+          <!-- <div class="footer-menu">
+            <h3>Меню</h3>
+            <ul>
+              <li><a href="#about">О проекте</a></li>
+              <li><a href="#courses">Курсы</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul> -->
+          </div>
+         <!-- <div class="footer-social">
+            <h3>Мы в соцсетях</h3>
+            <ul>
+              <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+              <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+              <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+          </div> -->
+        </div> 
+        <div class="footer-bottom">
+          <p>&copy; 2024 Мама-поиск. Все права защищены.</p>
+        </div>
+      </footer>
+
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
