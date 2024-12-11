@@ -757,8 +757,6 @@ footer {
 }
 
 
-/* Адаптивность через media queries */
-
 /* Мобильные устройства (маленькие экраны, например, iPhone SE) */
 @media (max-width: 320px) {
     /* Стили для экранов до 320px */
@@ -810,8 +808,8 @@ footer {
         align-items: center;
         padding: 0;
     }
-    .mother_1,
-    .spot_1 {
+
+    .mother_1, .spot_1 {
         width: 50%;
         margin-bottom: 20px;
     }
@@ -882,9 +880,10 @@ footer {
     }
 }
 
+/* Для экранов до 1200px (например, большие экраны и планшеты) */
 @media (max-width: 1200px) {
     h1 {
-        font-size: 2em; /* Уменьшение размера заголовка */
+        font-size: 2em;
         margin: 4% 0;
     }
 
@@ -895,7 +894,7 @@ footer {
     }
 
     .shape {
-        display: none; /* Убираем фигуры на меньших экранах для упрощения */
+        display: none;
     }
 
     .block_0 {
@@ -906,7 +905,7 @@ footer {
     }
 
     nav ul {
-        gap: 15px; /* Уменьшаем расстояние между кнопками */
+        gap: 15px;
     }
 
     .nav-button {
@@ -915,25 +914,26 @@ footer {
     }
 
     .images {
-        flex-direction: column-reverse; /* Меняем направление на вертикальное */
+        flex-direction: column-reverse;
         gap: 10px;
     }
 
     .mother_1, .spot_1 {
-        width: 90%; /* Уменьшаем ширину для корректного отображения */
+        width: 90%;
     }
 
     .spot_text {
         font-size: 55px;
     }
+
     .description {
         font-size: 18px;
         margin: 20px;
-        text-align: left; /* Улучшение читаемости */
+        text-align: left;
     }
 
     .card-container {
-        flex-wrap: wrap; /* Разрешаем перенос карточек */
+        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
         width: 75%;
@@ -941,20 +941,20 @@ footer {
     }
 
     .card {
-        width: 100%; /* Карточки занимают всю ширину */
+        width: 100%;
         font-size: 16px;
         padding: 20px;
     }
 
     .info-box-container {
-        flex-direction: column; /* Вертикальная структура для мобильных */
+        flex-direction: column;
         align-items: center;
         width: 75%;
         padding: 1% 7% 1% 4%;
     }
 
     .info-box {
-        width: 90%; /* Уменьшаем ширину карточек */
+        width: 90%;
     }
 
     .info-box-title {
@@ -968,7 +968,7 @@ footer {
     }
 
     .reasons {
-        gap: 20px; /* Уменьшаем отступы между элементами */
+        gap: 20px;
         padding: 0;
         margin: 0;
     }
@@ -979,24 +979,24 @@ footer {
     }
 
     .contact-form {
-        width: 90%; /* Сужаем форму */
+        width: 90%;
         padding: 20px;
     }
 
     .contact-form input {
-        font-size: 18px; /* Уменьшаем размер шрифта */
+        font-size: 18px;
         padding: 15px;
     }
 
     .contact-form button {
-        font-size: 16px; /* Уменьшаем размер текста кнопки */
+        font-size: 16px;
         padding: 10px 20px;
     }
 
     .teachers {
         width: 90%;
     }
-    
+
     .card p {
         font-style: 15px;
     }
