@@ -798,6 +798,15 @@ footer {
 /* Мобильные устройства (экраны до 480px, например, iPhone 6, 7, 8) */
 @media (max-width: 480px) {
     /* Стили для экранов до 480px */
+
+    .spot_text {
+        font-size: 50px;
+    }
+
+    .description {
+        text-align: center;
+    }
+
     h1 {
         font-size: 1.2em;
         margin: 45% 0% 0% 0%;
@@ -812,6 +821,19 @@ footer {
         font-size: 14px;
         padding: 8px 15px;
     }
+
+    .card-container {
+        width: 86%;
+    }
+
+    .info-box-container {
+        width: 86%;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
 
     .card {
         font-size: 14px;
@@ -1031,7 +1053,7 @@ footer {
     }
 
     .card p {
-        font-style: 15px;
+        font-size: 15px;
     }
 
     .teacher-photo {
