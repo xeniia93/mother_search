@@ -760,6 +760,39 @@ footer {
 /* Мобильные устройства (маленькие экраны, например, iPhone SE) */
 @media (max-width: 320px) {
     /* Стили для экранов до 320px */
+    h1 {
+        font-size: 1.2em;
+        margin: 45% 0% 0% 0%;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 0 5%;
+    }
+
+    .nav-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .card {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .reasons li {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .contact-form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 12px;
+    }
 }
 
 /* Мобильные устройства (экраны до 480px, например, iPhone 6, 7, 8) */
