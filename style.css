@@ -933,6 +933,7 @@ footer {
     .nav-menu ul li {
         margin: 10px 0;
     }
+
 }
 
 /* Для экранов до 1200px (например, большие экраны и планшеты) */
@@ -1064,5 +1065,6 @@ footer {
     .welcome {
         flex-direction: column;
         width: 90%;
+        align-items: center;
     }
 }
